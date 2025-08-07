@@ -1,6 +1,7 @@
 {
   "name": "LeetTrack",
   "short_name": "LeetTrack",
+  "id": "/Pwa-LeetTrack/",
   "start_url": "/Pwa-LeetTrack/",  
   "scope": "/Pwa-LeetTrack/",  
   "display": "standalone",
@@ -8,14 +9,24 @@
   "theme_color": "#299f5d",
   "icons": [
     {
-      "src": "/Pwa-LeetTrack/assets/icons/icon-192x192.png",  
+      "src": "/Pwa-LeetTrack/assets/icons/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"  
     },
     {
       "src": "/Pwa-LeetTrack/assets/icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"  
+    }
+  ],
+  "screenshots": [ 
+    {
+      "src": "/Pwa-LeetTrack/assets/screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }
