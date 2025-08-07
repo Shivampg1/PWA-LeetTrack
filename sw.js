@@ -1,12 +1,12 @@
 const CACHE_NAME = "leet-track-v1";
 const urlsToCache = [
-  "/Pwa-LeetTrack/",  // Changed from /LeetTrack/
+  "/Pwa-LeetTrack/",
   "/Pwa-LeetTrack/index.html",
   "/Pwa-LeetTrack/assets/css/style.css",
   "/Pwa-LeetTrack/assets/js/script.js",
   "/Pwa-LeetTrack/assets/icons/icon-192x192.png",
   "/Pwa-LeetTrack/assets/icons/icon-512x512.png",
-  "/Pwa-LeetTrack/manifest.json"  // Added manifest to cache
+  "/Pwa-LeetTrack/manifest.json"  
 ];
 
 self.addEventListener("install", (event) => {
@@ -20,4 +20,5 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request).then((response) => response || fetch(event.request))
   );
 });
+
 
