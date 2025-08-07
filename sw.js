@@ -1,4 +1,5 @@
-const CACHE_NAME = "leet-track-v1";
+const CACHE_VERSION = "v2";
+const CACHE_NAME = `leet-track-${CACHE_VERSION}`;
 const urlsToCache = [
   "/Pwa-LeetTrack/",
   "/Pwa-LeetTrack/index.html",
@@ -6,19 +7,42 @@ const urlsToCache = [
   "/Pwa-LeetTrack/assets/js/script.js",
   "/Pwa-LeetTrack/assets/icons/icon-192x192.png",
   "/Pwa-LeetTrack/assets/icons/icon-512x512.png",
-  "/Pwa-LeetTrack/manifest.json"  
+  "/Pwa-LeetTrack/manifest.json"
 ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(urlsToCache).catch((err) => {
+        console.error("Cache failed:", err);
+      });
+    })
   );
 });
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches.match(event.request).then((response) => response || fetch(event.request))
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request).catch(() => {
+        return caches.match("/Pwa-LeetTrack/index.html");
+      });
+    })
   );
 });
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((cache) => {
+          if (cache !== CACHE_NAME) {
+            return caches.delete(cache);
+          }
+        })
+      );
+    })
+  );
+});
+
 
 
