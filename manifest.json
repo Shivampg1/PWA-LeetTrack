@@ -1,19 +1,19 @@
 {
   "name": "LeetTrack",
   "short_name": "LeetTrack",
-  "start_url": "/LeetTrack/",  
-  "scope": "/LeetTrack/",      
+  "start_url": "/PWA-LeetTrack/",  
+  "scope": "/PWA-LeetTrack/",  
   "display": "standalone",
   "background_color": "#1E1E1E",
   "theme_color": "#299f5d",
   "icons": [
     {
-      "src": "/LeetTrack/assets/icons/icon-192x192.png", 
+      "src": "/PWA-LeetTrack/assets/icons/icon-192x192.png",  
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/LeetTrack/assets/icons/icon-512x512.png",
+      "src": "/PWA-LeetTrack/assets/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
