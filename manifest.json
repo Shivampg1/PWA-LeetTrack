@@ -12,22 +12,32 @@
       "src": "/Pwa-LeetTrack/assets/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any"  
+      "purpose": "any maskable"  
     },
     {
       "src": "/Pwa-LeetTrack/assets/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"  
+      "purpose": "any maskable"  
     }
   ],
-  "screenshots": [ 
+  "screenshots": [
     {
       "src": "/Pwa-LeetTrack/assets/screenshots/desktop.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Desktop View"  
+    },
+    {
+      "src": "/Pwa-LeetTrack/assets/screenshots/mobile.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile View"  
     }
-  ]
+  ],
+  "description": "Track your LeetCode progress with visual stats",  
+  "orientation": "portrait-primary"  
 }
 
