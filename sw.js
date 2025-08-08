@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v3";  // Updated version
+const CACHE_VERSION = "v3"; 
 const CACHE_NAME = `leet-track-${CACHE_VERSION}`;
 const OFFLINE_URL = "/Pwa-LeetTrack/index.html";  
 
@@ -53,3 +53,4 @@ self.addEventListener("activate", (event) => {
       .then(() => self.clients.claim())  // Control all pages
   );
 });
+
