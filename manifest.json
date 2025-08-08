@@ -1,9 +1,9 @@
 {
   "name": "LeetTrack",
   "short_name": "LeetTrack",
-  "id": "/Pwa-LeetTrack/",
-  "start_url": "/Pwa-LeetTrack/",  
-  "scope": "/Pwa-LeetTrack/",  
+  "id": "com.github.shivampg1.leetrack",
+  "start_url": "https://shivampg1.github.io/Pwa-LeetTrack/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#1E1E1E",
   "theme_color": "#299f5d",
@@ -12,13 +12,19 @@
       "src": "/Pwa-LeetTrack/assets/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"  
+      "purpose": "any"
     },
     {
       "src": "/Pwa-LeetTrack/assets/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"  
+      "purpose": "any"
+    },
+    {
+      "src": "/Pwa-LeetTrack/assets/icons/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "screenshots": [
@@ -27,17 +33,16 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Desktop View"  
+      "label": "Desktop Dashboard"
     },
     {
       "src": "/Pwa-LeetTrack/assets/screenshots/mobile.png",
       "sizes": "375x812",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Mobile View"  
+      "label": "Mobile Progress View"
     }
   ],
-  "description": "Track your LeetCode progress with visual stats",  
-  "orientation": "portrait-primary"  
+  "description": "Track your LeetCode progress with visual stats",
+  "orientation": "portrait"
 }
-
